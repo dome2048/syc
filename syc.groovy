@@ -12,9 +12,8 @@
     input("token", "text", title: "Access Token")
 }
  
- // for the UI
 metadata {
-    // Automatically generated. Make future change here.
+
 	definition (name: "Smart Yard Controller", author: "dome") {
     	capability "Switch"
         capability "Valve"
@@ -24,7 +23,7 @@ metadata {
 */
 }
 
-    // tile definitions
+
 	tiles {
 		standardTile("switch", "device.switch", width: 1, height: 1, canChangeIcon: true) {
 			state "on", label: '${name}', action: "switch.off", icon: "st.switches.switch.on", backgroundColor: "#79b821"
